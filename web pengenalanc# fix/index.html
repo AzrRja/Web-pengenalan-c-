@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Pengenalan C#</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+    <header class="bg-blue-600 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Belajar Bahasa C#</h1>
+            <nav>
+                <div class="md:hidden">
+                    <button class="text-white focus:outline-none" id="menu-button">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                <ul class="hidden md:flex space-x-4" id="menu">
+                    <li><a class="hover:underline" href="#home">Beranda</a></li>
+                    <li><a class="hover:underline" href="#about">Tentang</a></li>
+                    <li><a class="hover:underline" href="#features">Fitur</a></li>
+                    <li><a class="hover:underline" href="#installation">Instalasi</a></li>
+                    <li><a class="hover:underline" href="#basics">Dasar-Dasar</a></li>
+                    <li><a class="hover:underline" href="#examples">Contoh</a></li>
+                    <li><a class="hover:underline" href="#faq">FAQ</a></li>
+                    <li><a class="hover:underline" href="#creators">Pembuat</a></li>
+                    <li><a class="hover:underline" href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+        <ul class="md:hidden mt-4 space-y-2" id="mobile-menu" style="display: none;">
+            <li><a class="block text-white hover:underline" href="#home">Beranda</a></li>
+            <li><a class="block text-white hover:underline" href="#about">Tentang</a></li>
+            <li><a class="block text-white hover:underline" href="#features">Fitur</a></li>
+            <li><a class="block text-white hover:underline" href="#installation">Instalasi</a></li>
+            <li><a class="block text-white hover:underline" href="#basics">Dasar-Dasar</a></li>
+            <li><a class="block text-white hover:underline" href="#examples">Contoh</a></li>
+            <li><a class="block text-white hover:underline" href="#faq">FAQ</a></li>
+            <li><a class="block text-white hover:underline" href="#creators">Pembuat</a></li>
+            <li><a class="block text-white hover:underline" href="#contact">Kontak</a></li>
+        </ul>
+    </header>
+    <section class="bg-white py-10" id="home">
+        <div class="container mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-4">Selamat Datang di Pengenalan Pemrograman C#</h2>
+            <p class="mb-6">C# adalah bahasa pemrograman modern yang berorientasi objek yang dikembangkan oleh
+                Microsoft.</p>
+            <img alt="Ilustrasi pemrograman C# dengan cuplikan kode dan layar komputer" class="mx-auto mb-6"
+                height="400" src="images/logo.png" width="600" />
+            <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" href="#about">Mulai</button>
+        </div>
+    </section>
+    <section class="bg-gray-200 py-10" id="about">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Tentang C#</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 p-4">
+                    <img alt="Diagram yang menunjukkan evolusi bahasa C#" class="w-full mb-4" height="300"
+                        src="images/diagram.png"
+                        width="400" />
+                </div>
+                <div class="w-full md:w-1/2 p-4" style="text-align: justify;">
+                    <p>C# adalah bahasa pemrograman yang sangat serbaguna dan banyak digunakan dalam berbagai jenis
+                        pengembangan perangkat lunak. Bahasa ini dirancang oleh Microsoft sebagai bagian dari framework
+                        .NET, yang memungkinkan para pengembang untuk membuat berbagai macam aplikasi dengan cara yang
+                        lebih efisien. C# dapat digunakan untuk mengembangkan aplikasi web, aplikasi mobile, game,
+                        hingga perangkat lunak perusahaan yang kompleks.</p>
+                    <p>C# menawarkan banyak fitur yang membuat pengembangan aplikasi menjadi lebih mudah dan efektif.
+                        Salah satu fitur utamanya adalah pengetikan yang kuat (strong typing), yang berarti bahwa setiap
+                        variabel yang dideklarasikan di dalam kode harus memiliki tipe data yang jelas. Ini membantu
+                        mencegah kesalahan umum dalam kode dan memastikan aplikasi berjalan sesuai dengan yang
+                        diinginkan.</p>
+                    <p>Selain itu, C# juga mendukung pengumpulan sampah (garbage collection), yang secara otomatis
+                        mengelola memori dengan cara membebaskan ruang yang tidak digunakan lagi. Ini memungkinkan
+                        pengembang untuk fokus pada logika aplikasi tanpa harus khawatir tentang mengelola memori secara
+                        manual.</p>
+                    <p>C# juga dilengkapi dengan fitur penanganan pengecualian (exception handling), yang memudahkan
+                        pengembang untuk menangani kesalahan yang terjadi selama aplikasi berjalan. Dengan menggunakan
+                        blok kode khusus, seperti try-catch, pengembang dapat mengelola kesalahan dengan cara yang lebih
+                        terstruktur dan menjaga aplikasi tetap berjalan dengan baik meskipun terjadi masalah.</p>
+                    <p>Secara keseluruhan, C# adalah bahasa pemrograman yang sangat kuat dan fleksibel, yang cocok untuk
+                        berbagai jenis proyek pengembangan perangkat lunak, baik untuk aplikasi desktop, mobile, atau
+                        berbasis web. Fitur-fitur canggih yang ditawarkan oleh C# membuatnya menjadi pilihan populer di
+                        kalangan pengembang di seluruh dunia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-10" id="features">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Fitur C#</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <i class="fas fa-code text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Berorientasi Objek</h3>
+                    <p>C# mendukung prinsip pemrograman berorientasi objek seperti pewarisan, polimorfisme, dan
+                        enkapsulasi.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <i class="fas fa-shield-alt text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Tipe Aman</h3>
+                    <p>C# memastikan keamanan tipe, yang membantu mencegah kesalahan tipe dan meningkatkan keandalan
+                        kode.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <i class="fas fa-sync-alt text-blue-600 text-3xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Manajemen Memori Otomatis</h3>
+                    <p>C# menyertakan pengumpulan sampah, yang secara otomatis mengelola alokasi dan dealokasi memori.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-200 py-10" id="installation">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Instalasi</h2>
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 p-4">
+                    <img alt="Tangkapan layar proses instalasi Visual Studio" class="w-full mb-4" height="300"
+                        src="images/ss.png"
+                        width="400" />
+                </div>
+                <div class="w-full md:w-1/2 p-4">
+                    <h3 class="text-xl font-bold mb-2">Panduan Langkah-demi-Langkah</h3>
+                    <ol class="list-decimal list-inside">
+                        <li>Unduh <a href="https://code.visualstudio.com/" class="mt-4 inline-block text-blue-500 hover:text-blue-700">Visual Studio</a> dari situs resmi.</li>
+                        <li>Jalankan penginstal dan pilih menu project pengembangan desktop .NET.</li>
+                        <li>Ikuti instruksi di layar untuk menyelesaikan instalasi.</li>
+                        <li>Buka Visual Studio dan buat proyek C# baru.</li>
+                    </ol>
+                    <a href="https://www.youtube.com/watch?v=ZVGutgqBMUM&pp=ygUmY2FyYSBtZW1hc2FuZyBjIyBkaSB2aXN1YWwgc3R1ZGlvIGNvZGU%3D" target="_blank" class="mt-4 inline-block text-blue-500 hover:text-blue-700">Lihat panduan video di YouTube</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <section class="bg-white py-10" id="basics">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Dasar-Dasar C#</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Variabel</h3>
+                    <p>Variabel digunakan untuk menyimpan data. Di C#, Anda perlu mendeklarasikan variabel sebelum
+                        menggunakannya.</p>
+                    <pre class="bg-gray-200 p-4 rounded"><code>int number = 10;
+string name = "John";</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Struktur Kontrol</h3>
+                    <p>C# mendukung berbagai struktur kontrol seperti if-else, switch, for, while, dan foreach.</p>
+                    <pre class="bg-gray-200 p-4 rounded"><code>if (number &gt; 5) {
+    Console.WriteLine("Angka lebih besar dari 5");
+} else {
+    Console.WriteLine("Angka 5 atau kurang");
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Tipe Data</h3>
+                    <p>C# memiliki beberapa tipe data bawaan, termasuk int, float, double, char, dan string.</p>
+                    <pre class="bg-gray-200 p-4 rounded"><code>int age = 25;
+float height = 5.9f;
+double weight = 70.5;
+char grade = 'A';
+string message = "Halo, Dunia!";</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Metode</h3>
+                    <p>Metode adalah blok kode yang melakukan tugas tertentu. Mereka dapat menerima parameter dan
+                        mengembalikan nilai.</p>
+                    <pre class="bg-gray-200 p-4 rounded"><code>public int Add(int a, int b) {
+    return a + b;
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Kelas dan Objek</h3>
+                    <p>C# adalah bahasa yang berorientasi objek, yang berarti ia menggunakan kelas dan objek untuk
+                        menyusun kode.</p>
+                    <pre class="bg-gray-200 p-4 rounded"><code>public class Person {
+    public string Name { get; set; }
+    public int Age { get; set; }
+
+    public void Introduce() {
+        Console.WriteLine($"Halo, nama saya {Name} dan saya berusia {Age} 
+            tahun.");
+    }
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Array</h3>
+                    <p>Array digunakan untuk menyimpan beberapa nilai dari tipe yang sama dalam satu variabel.</p>
+                    <pre class="bg-gray-200 p-4 rounded"><code>int[] numbers = {1, 2, 3, 4, 5};
+string[] names = {"Alice", "Bob", "Charlie"};</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-200 py-10" id="examples">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Contoh C#</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Halo Dunia</h3>
+                    <pre class="bg-gray-200 p-4 rounded"><code>using System;
+
+class Program {
+    static void Main() {
+        Console.WriteLine("Halo, Dunia!");
+    }
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Kalkulator Sederhana</h3>
+                    <pre class="bg-gray-200 p-4 rounded"><code>using System;
+
+class Calculator {
+    static void Main() {
+        Console.WriteLine("Masukkan angka pertama:");
+        int num1 = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Masukkan angka kedua:");
+        int num2 = Convert.ToInt32(Console.ReadLine());
+
+        int sum = num1 + num2;
+        Console.WriteLine("Jumlah: " + sum);
+    }
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Perhitungan Faktorial</h3>
+                    <pre class="bg-gray-200 p-4 rounded"><code>using System;
+
+class Factorial {
+    static void Main() {
+        Console.WriteLine("Masukkan sebuah angka:");
+        int num = Convert.ToInt32(Console.ReadLine());
+
+        int result = 1;
+        for (int i = 1; i &lt;= num; i++) {
+            result *= i;
+        }
+
+        Console.WriteLine($"Faktorial dari {num} adalah {result}");
+    }
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Deret Fibonacci</h3>
+                    <pre class="bg-gray-200 p-4 rounded"><code>using System;
+
+class Fibonacci {
+    static void Main() {
+        Console.WriteLine("Masukkan jumlah suku:");
+        int terms = Convert.ToInt32(Console.ReadLine());
+
+        int a = 0, b = 1, c;
+        Console.Write($"{a} {b} ");
+
+        for (int i = 2; i &lt; terms; i++) {
+            c = a + b;
+            Console.Write($"{c} ");
+            a = b;
+            b = c;
+        }
+    }
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Cek Palindrome</h3>
+                    <pre class="bg-gray-200 p-4 rounded"><code>using System;
+
+class Palindrome {
+    static void Main() {
+        Console.WriteLine("Masukkan sebuah string:");
+        string str = Console.ReadLine();
+        string rev = "";
+
+        for (int i = str.Length - 1; i &gt;= 0; i--) {
+            rev += str[i];
+        }
+
+        if (str == rev) {
+            Console.WriteLine($"{str} adalah palindrome.");
+        } else {
+            Console.WriteLine($"{str} bukan palindrome.");
+        }
+    }
+}</code></pre>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Cek Bilangan Prima</h3>
+                    <pre class="bg-gray-200 p-4 rounded"><code>using System;
+
+class PrimeCheck {
+    static void Main() {
+        Console.WriteLine("Masukkan sebuah angka:");
+        int num = Convert.ToInt32(Console.ReadLine());
+        bool isPrime = true;
+
+        for (int i = 2; i &lt;= Math.Sqrt(num); i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            Console.WriteLine($"{num} adalah bilangan prima.");
+        } else {
+            Console.WriteLine($"{num} bukan bilangan prima.");
+        }
+    }
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-10" id="creators">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Anggota</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-gray-100 p-6 rounded shadow text-center">
+                    <img alt="gambar alfi" class="w-32 h-32 rounded-full mx-auto mb-4" height="128"
+                        src="images/alfi.jpg" width="128" />
+                    <h3 class="text-xl font-bold mb-2">Alfi Azaria Roja</h3>
+                    <p><strong>Mahasiswa</strong></p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow text-center">
+                    <img alt="gambar atri" class="w-32 h-32 rounded-full mx-auto mb-4" height="128"
+                        src="images/atri.jpg" width="128" />
+                    <h3 class="text-xl font-bold mb-2">Atri Wiraguna</h3>
+                    <p><strong>Mahasiswa</strong></p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow text-center">
+                    <img alt="gambar bimma" class="w-32 h-32 rounded-full mx-auto mb-4" height="128"
+                        src="images/bimma.jpg" width="128" />
+                    <h3 class="text-xl font-bold mb-2">Bimma Wahyu Makarim</h3>
+                    <p><strong>Mahasiswa</strong></p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow text-center">
+                    <img alt="gambar akbar" class="w-32 h-32 rounded-full mx-auto mb-4" height="128"
+                        src="images/akbar.jpg" width="128" />
+                    <h3 class="text-xl font-bold mb-2">Akbar Fitra Nove</h3>
+                    <p><strong>Mahasiswa</strong></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-white py-10" id="faq">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">FAQ</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Apa itu C#?</h3>
+                    <p>C# adalah bahasa pemrograman modern yang berorientasi objek yang dikembangkan oleh Microsoft
+                        sebagai bagian dari framework .NET.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Apa yang bisa saya buat dengan C#?</h3>
+                    <p>Anda dapat membangun berbagai aplikasi termasuk aplikasi web, aplikasi mobile, game, dan
+                        perangkat lunak perusahaan.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Apakah C# mudah dipelajari?</h3>
+                    <p>C# dianggap sebagai bahasa yang ramah pemula karena kesederhanaan dan keterbacaannya.</p>
+                </div>
+                <div class="bg-gray-100 p-6 rounded shadow">
+                    <h3 class="text-xl font-bold mb-2">Alat apa yang saya butuhkan untuk memulai dengan C#?</h3>
+                    <p>Anda memerlukan IDE seperti Visual Studio dan framework .NET untuk mulai mengembangkan di C#.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="bg-gray-200 py-10" id="contact">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-4">Kontak Kami</h2>
+            <form class="max-w-lg mx-auto bg-white p-6 rounded shadow">
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="name">Nama</label>
+                    <input class="w-full px-4 py-2 border rounded" id="name" placeholder="Nama Anda" type="text" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="email">Email</label>
+                    <input class="w-full px-4 py-2 border rounded" id="email" placeholder="Email Anda" type="email" />
+                </div>
+                <div class="mb-4">
+                    <label class="block text-gray-700" for="message">Pesan</label>
+                    <textarea class="w-full px-4 py-2 border rounded" id="message" placeholder="Pesan Anda"
+                        rows="4"></textarea>
+                </div>
+                <button class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700" type="submit">Kirim
+                    Pesan</button>
+            </form>
+        </div>
+    </section>
+</body>
+
+</html>
